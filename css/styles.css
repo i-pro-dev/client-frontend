@@ -39,7 +39,3 @@ input.checkbox-dark.form-check-input:checked {
 input.checkbox-dark.form-check-input[type="checkbox"]:checked {
   background-image: url("/svg/check-checkbox-dark.svg");
 }
-
-input.form-check-input[type="checkbox"] label {
-  font-family: "Raleway", sans-serif;
-}
