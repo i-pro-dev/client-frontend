@@ -1,5 +1,18 @@
 body {
+  width: 50vw;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
+  color: #ffffff;
+}
+
+ui_kit__checkbox-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-kit__color-block {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
 }

@@ -23,8 +23,23 @@ font-family: 'Raleway', sans-serif;
   --pink-300: #eb65ee;
 }
 
-.ui-kit__color-block {
-  width: 150px;
-  height: 150px;
-  border-radius: 1rem;
+input.checkbox-item {
+  display: block;
+}
+input.checkbox-dark {
+  margin-right: 0.5rem;
+  border: 1px solid #82878d;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input.checkbox-dark.form-check-input:checked {
+  background-color: #353e46;
+  border-color: #353e46;
+}
+input.checkbox-dark.form-check-input[type="checkbox"]:checked {
+  background-image: url("/svg/check-checkbox-dark.svg");
+}
+
+input.form-check-input[type="checkbox"] label {
+  font-family: "Raleway", sans-serif;
 }
