@@ -1,3 +1,7 @@
+html {
+  margin-bottom: 80px;
+}
+
 .chat-hat {
   position: sticky;
   height: 50px;
