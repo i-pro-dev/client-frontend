@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --purple-grad-400: linear-gradient(134.13deg, #8d98ff -0.7%, #bfa7fd 97.82%);
+  --purple-grad-500: linear-gradient(
+    125.12deg,
+    #bc85ff -4.39%,
+    #6259fc 109.98%
+  );
+
+  --gray-400: #c0c0c0;
+  --gray-800: #353e46;
+  --black-900: #18191b;
+
+  --blue-grad-300: linear-gradient(141.21deg, #8fcdfd 4.63%, #7075f4 88.27%);
+  --blue-400: #6b6cf2;
+
+  --pink-300: #eb65ee;
+}
+
+.ui-kit__color-block {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+}
