@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="../../css/leaflet.css" />
+    <script src="../../js/leaflet.js"></script>
+    <title>Home</title>
+</head>
+
+<body onload="update_zoom()" style="z-index: -2;">
+    <div id="map" style="z-index: 0">
+    </div>
+    <div id="icons-here">
+        <!--        <div style="top: 30%;right: 20%" class="my-position d-flex justify-content-center align-items-center">-->
+        <!--            <div class="orange-circle"></div>-->
+        <!--        </div>-->
+        <!--        <div style="top:30%;left:40%;" class="position-fixed">-->
+        <!--            <a href="#" onclick="collapse_toggle()">-->
+        <!--                <div class="geopoint d-flex justify-content-center align-items-center pb-2 ">-->
+        <!--                    <div class="dog-img"></div>-->
+        <!--                </div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+    </div>
+    <footer class="nav-bar">
+        <button class="nav-bar__element" onclick="location.href='#'">
+            <img src="lenta.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Лента событий</div>
+        </button>
+        <button class="nav-bar__element">
+            <img src="map.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Карта событий</div>
+        </button>
+        <button class="nav-bar__element">
+            <img src="messenger.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Сообщения</div>
+        </button>
+        <button class="nav-bar__element">
+            <img src="profile.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Анкета</div>
+        </button>
+    </footer>
+    <div class="search-bar-wrapper" style="z-index: 10;">
+        <div class="search-bar d-inline-flex justify-content-start align-items-center h-100">
+            <div id="search-icon" class="grey-search-icon" onclick="search_history_close()"></div>
+            <div class="w-100"><input onclick="search_history_open()" type="email" class="form-control" id="line-edit"
+                    placeholder="Поиск..."></div>
+            <div><a href="#">
+                    <div class="dropdown"></div>
+                </a></div>
+        </div>
+    </div>
+    <div id="search-history">
+        <div class="search-history">
+            <div class="d-flex flex-column px-2" id="search-results1">
+                <!--                <div><a href="#">-->
+                <!--                    <div class="bg-white w-100 d-inline-flex align-items-center p-2">-->
+                <!--                        <div class="time-icon me-3"></div>-->
+                <!--                        <div><h3 class="text-common">Свободы</h3></div>-->
+                <!--                    </div>-->
+                <!--                </a></div>-->
+                <!--                <div><a href="#">-->
+                <!--                    <div class="bg-white w-100 d-inline-flex p-2">-->
+                <!--                        <div class="time-icon me-3"></div>-->
+                <!--                        <div><h3 class="text-common">Миллениум</h3></div>-->
+                <!--                    </div>-->
+                <!--                </a></div>-->
+            </div>
+        </div>
+    </div>
+    <script>
+        var opened = false;
+        var park_id = 0;
+        function search_history_open() {
+            document.getElementById('search-history').style.display = 'block';
+            document.getElementById('search-icon').classList.add('grey-close-icon');
+            document.getElementById('search-icon').classList.remove('grey-search-icon');
+        }
+        function search_history_close() {
+            document.getElementById('search-history').style.display = 'none';
+            document.getElementById('search-icon').classList.remove('grey-close-icon');
+            document.getElementById('search-icon').classList.add('grey-search-icon');
+        }
+        function collapse_open() {
+            document.getElementById("info").style.display = 'block';
+            document.getElementById('info-name').innerHTML = locs[park_id][2];
+        }
+        function collapse_close() {
+            document.getElementById("info").style.display = 'none';
+        }
+        function collapse_toggle(park) {
+            opened = !opened;
+            opened ? collapse_open() : collapse_close();
+        }
+    </script>
+    <script src="../../../cordova.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
