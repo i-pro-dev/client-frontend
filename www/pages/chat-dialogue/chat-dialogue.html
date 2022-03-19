@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="chat-dialogue.css">
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="chat-hat">
+        <button class="arrow-back">
+            <img src="../../svg/chat-arrow-back.svg" alt="<" srcset="">
+        </button>
+        <div class="title">
+            SkillsCloud
+        </div>
+        <img src="chat-profile-pic.png" alt="" class="profile-pic">
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- <div class="message message-notmine">
+            <div class="message__text">
+                Егор, вами заинтересовалась компания “SharkPlay”. Чтобы связаться с заказчиком, дайте своё
+                подтверждение.
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">6:52</div>
+            </div>
+        </div>
+        <div class="message message-mine">
+            <div class="message__text">
+                Егор, вами заинтересовалась компания “SharkPlay”. Чтобы связаться с заказчиком, дайте своё
+                подтверждение.
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">6:52</div>
+            </div> -->
+    </div>
+
+    </div>
+
+    <form method="POST" action="" onsubmit="" class="chat-message-form">
+        <button class="btn-attachment"><img src="../../svg/chat-attachment.svg" alt="&"></button>
+        <input type="text" placeholder="Сообщение..." class="form-control message-form" id="msg_input">
+        <button type="submit" onclick="send_message(my_id, his_id, document.getElementById('msg_input').value)"
+            class="btn-send"><img src="../../svg/chat-arrow-send.svg" alt="->"></button>
+    </form>
+
+
+
+
+
+</body>
+<script src="../../cordova.js"></script>
+<script>
+    const my_id = 4
+    const his_id = 3
+</script>
+<script>
+    const send_message = function (from_user_id, to_user_id, msg) {
+        if (!msg) setTimeout(() => { return }, 900);
+        cordovaHTTP.post(`https://hackaton-lambda-backend.herokuapp.com/messages?from_user_id=${from_user_id}&to_user_id=${to_user_id}&message=${msg.toString()}`,
+            {}, {},
+            function (response) {
+                console.log(response.status);
+                try {
+                    response.data = JSON.parse(response.data);
+                    // console.log(response.data);
+                    //extract messages
+                    console.log(response.data);
+                } catch (e) {
+                    console.error(`JSON parsing error: ${e}`);
+                }
+            },
+            function (response) {
+                // prints 403
+                console.log(response.status);
+
+                //prints Permission denied 
+                console.log(response.error);
+            });
+    }
+    const add_message = function (item) {
+        console.log(item);
+        to_user_id = item['to_user_id'];
+        from_user_id = item['from_user_id'];
+        time = "6:52"; // TODO: Fix time
+        message_text = item['message'];
+        document.getElementById("chat-messages").innerHTML += `<div class="message message-${from_user_id != my_id ? "not" : ""}mine">
+            <div class="message__text">
+                ${message_text}
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">
+                ${time}
+                </div>
+            </div>
+        </div>`;
+    }
+    const load_messages = function (my_id, his_id) {
+        cordovaHTTP.get("https://hackaton-lambda-backend.herokuapp.com/messages", {
+            'from_user_id': my_id,
+            'to_user_id': his_id,
+        }, {},
+            function (response) {
+                console.log(response.status);
+                try {
+                    response.data = JSON.parse(response.data);
+                    // console.log(response.data);
+                    var resp = response.data['details'];
+                    //extract messages
+
+
+
+                    console.log(resp);
+                    resp.forEach(add_message);
+                } catch (e) {
+                    console.error(`JSON parsing error: ${e}`);
+                }
+            },
+            function (response) {
+                // prints 403
+                console.log(response.status);
+
+                //prints Permission denied 
+                console.log(response.error);
+            });
+    }
+    setTimeout(() => { load_messages(my_id, his_id) }, 900);
+
+    console.log("Done!")
+</script>
+<!-- <script src="chat-dialogue.js"></script> -->
+
+</html>
