@@ -1,0 +1,100 @@
+.card{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    min-width: 350px;
+    max-height: 203px; 
+    aspect-ratio: 1/2;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card p{
+    /*margin-top: 30px;*/
+    font-family: 'Open Sans', sans-serif;
+    color: #BC85FF;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    text-align: left;
+}
+
+.main-text{
+    font-size: 22px;
+}
+
+.side-text{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.btn{
+    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+    border-radius: 73px;
+    Width: 260px;
+    Height: 65px;
+    margin-top: 58px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:#FFFFFF;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+.inp{
+    display: block;
+    width: 350px;
+    height: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 9px 11px -10px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    border: 0px;
+    color: #C0C0C0;
+    padding-left: 26px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    margin: 24px;
+
+}
+
+.btn{
+    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+    border-radius: 73px;
+    Width: 260px;
+    Height: 65px;
+    margin-top: 58px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:#FFFFFF;
+}
+
+.value{
+    opacity: 20%;
+}
+
+.btn{
+    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+    border-radius: 73px;
+    Width: 260px;
+    Height: 65px;
+    margin-top: 58px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:#FFFFFF;
+}
