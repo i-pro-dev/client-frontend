@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="chat-dialogue.css">
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="chat-hat">
+        <button class="arrow-back">
+            <img src="../../svg/chat-arrow-back.svg" alt="<" srcset="">
+        </button>
+        <div class="title">
+            SkillsCloud
+        </div>
+        <img src="chat-profile-pic.png" alt="" class="profile-pic">
+    </div>
+    <div class="chat-messages">
+        <div class="message message-notmine">
+            <div class="message__text">
+                Егор, вами заинтересовалась компания “SharkPlay”. Чтобы связаться с заказчиком, дайте своё
+                подтверждение.
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">6:52</div>
+            </div>
+        </div>
+        <div class="message message-mine">
+            <div class="message__text">
+                Егор, вами заинтересовалась компания “SharkPlay”. Чтобы связаться с заказчиком, дайте своё
+                подтверждение.
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">6:52</div>
+            </div>
+        </div>
+
+    </div>
+
+    <form action="" class="chat-message-form">
+        <button class="btn-attachment"><img src="../../svg/chat-attachment.svg" alt="&"></button>
+        <input type="text" placeholder="Сообщение..." class="form-control message-form">
+        <button type="submit" class="btn-send"><img src="../../svg/chat-arrow-send.svg" alt="->"></button>
+    </form>
+
+
+
+
+
+</body>
+<script src="../../cordova.js"></script>
+<script>
+    const load_messages = function (my_id, his_id) {
+        cordovaHTTP.get("https://hackaton-lambda-backend.herokuapp.com/messages", {
+            'from_user_id': my_id,
+            'to_user_id': his_id,
+        },
+            function (response) {
+                console.log(response.status);
+                try {
+                    response.data = JSON.parse(response.data);
+                    //extract messages
+                    var target = document.getElementsByClassName('chat-messages')[0]
+
+                    to_user_id = 3
+                    from_user_id = 4
+                    time = "6:52"
+                    message_text = "aboba"
+                    target.innerHtml +=
+                        `<div class="message message-${from_user_id != my_id ? "not" : ""}mine">
+            <div class="message__text">
+                ${message_text}
+            </div>
+            <div class="message__footer">
+                <div class="message__footer__time">
+                ${time}
+                </div>
+            </div>
+        </div>`
+                } catch (e) {
+                    console.error("JSON parsing error");
+                }
+            },
+            function (response) {
+                // prints 403
+                console.log(response.status);
+
+                //prints Permission denied 
+                console.log(response.error);
+            });
+    }
+
+    load_messages(3, 4)
+    console.log("Done!")
+</script>
+<!-- <script src="chat-dialogue.js"></script> -->
+
+</html>
