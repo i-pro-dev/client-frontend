@@ -36,6 +36,23 @@ body {
     font-size: 22px;
     color: #ffffff;
 }
+.image{
+    width: 200px;
+    height: 200px;
+    background: url(pic1.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center center;
+}
+
+.image2{
+  width: 200px;
+  height: 200px;
+  background: url(pic2.svg);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center center;
+}
 
 .side-text{
     font-family: "Open Sans", sans-serif;
