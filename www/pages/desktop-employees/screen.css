@@ -1,0 +1,222 @@
+.panel{
+    width:760px;
+    height:400px;
+    background: linear-gradient(141.21deg, #8FCDFD 4.63%, #7075F4 88.27%);
+    box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+button{
+    background: #18191B;
+    border-radius: 16px;
+    color:white;
+    max-width: 300px;
+    height: 60px;
+    outline: 0;
+    border:0;
+}
+h3{
+    color:white;
+}
+input[type='text']{
+    background: #FFFFFF;
+    box-shadow: 0px 9px 11px -10px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    border:1px solid lightgray;
+    padding:5px;
+    height:60px;
+    width:300px;
+}
+input[type='text']:focus{
+    border:1px solid lightgray;
+    outline:0;
+}
+.grey-search-icon{
+    width: 25px;
+    height: 25px;
+    background: url("search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:25px;
+    
+}
+.logo-text{
+    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+}
+.text{
+    font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+color: #18191B;
+/* opacity: 0.7; */
+}
+.footer{
+    background: #18191B;
+    height:550px;
+}
+div{
+    color: #FAFAFA;
+    font-size:14px;
+}
+div > *{
+    /* opacity: 0.95; */
+    line-height: 28px;
+}
+.text-h{
+    font-weight: 600;
+    font-size:24px;
+}
+.p{
+    cursor: pointer;
+}
+.wallpaper{
+    width:800px;
+    height:200px;
+    background: url(wallpaper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    border-radius: 16px;
+
+}
+.photo{
+    width:20px;
+    height:16px;
+    background: url(photo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.edit{
+    width:20px;
+    height:20px;
+    background-image: url(edit.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+.icon{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: #F34848;
+box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+border-radius: 22px;
+}
+.dropdown{
+    width:20px;
+    height:16px;
+    background: url(dropdown.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+p{
+    color: #18191B;
+    margin:0;
+}
+.panel{
+    width:240px;
+    height:160px;
+    background: linear-gradient(141.21deg, #8FCDFD 4.63%, #7075F4 88.27%);
+border-radius: 32px 10px;
+}
+.employee{
+    background: #FFFFFF;
+box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+padding:10px;
+}
+body{
+    background: #F3F5F8;
+}
+.employees{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile{
+    width:120px;
+    height:120px;
+    background: url(profile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.vanik{
+    width:120px;
+    height:150px;
+    background: url(маник.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    position: relative;
+    top: 11.5px;
+}
+.grig{
+    width:120px;
+    height:150px;
+    position: relative;
+    background: url(Григорий.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    top: 11px;
+}
+.irina{
+    width:120px;
+    height:150px;
+    position: relative;
+    background: url(ирина.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    top: 8px;
+}
+.arina{
+    width:120px;
+    height:150px;
+    position: relative;
+    background: url(арина.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    top: 11px;
+}
+h3{
+    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+    position: relative;    
+left: calc(50% - 400px);
+}
+.hr{
+    position: absolute;
+    left:calc(50% - 180px);
+    top: 140px;
+}
+.t{
+    opacity: 0.95;
+}
+#more1, #more2, #more3, #more4{
+    position: relative;
+    left:-220px;
+}
+body{
+    position: relative;
+}
+html,body{
+    overflow-x: hidden;
+}
