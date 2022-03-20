@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../swipe-cards/swipe-cards.css">
+    <link rel="stylesheet" href="swipe-cards-demo.css">
+
+    <title>Swipe-animation-demo</title>
+</head>
+
+<body>
+    <div class="tinder">
+        <div class="tinder--status">
+            <img src="../../svg/swipe-card-cross.svg" alt="X" class="fa fa-remove">
+            <img src="../../svg/swipe-card-heart.svg" alt="<3" class="fa fa-heart">
+        </div>
+
+        <div class="tinder--cards">
+            <div class="tinder--card swipe-card">
+                <img src="card-1.svg" alt="card-image" class="swipe-card__image">
+                <div class="mb-1 swipe-card__text">Судя по вашему аккаунту, Вы много программируете на Javascript</div>
+                <div class="swipe-card__text"></div>
+            </div>
+        </div>
+        <div class="tinder--buttons">
+            <button id="nope"><img src="../../svg/swipe-card-cross.svg" alt="X"></button>
+            <button id="love"><img src="../../svg/swipe-card-heart.svg" alt="<3"></button>
+        </div>
+
+    </div>
+</body>
+<script src="hammer.js"></script>
+<script>
+    redirect = '../swipe-card-ver2/swipe-card-ver2.html'
+</script>
+<script src="card-swipe.js"></script>
+
+</html>

@@ -1,6 +1,5 @@
 'use strict';
 
-const redirect = '../start-second/start-second.html'
 
 var tinderContainer = document.querySelector('.tinder');
 var allCards = document.querySelectorAll('.tinder--card');

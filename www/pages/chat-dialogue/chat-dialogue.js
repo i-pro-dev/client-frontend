@@ -1,5 +1,5 @@
 const load_messages = function(my_id, his_id) {
-    cordovaHTTP.get("https://hackaton-lambda-backend.herokuapp.com/messages", {
+    cordovaHTTP.get("https://hackaton-i-pro-backend.herokuapp.com/messages", {
         'from_user_id':my_id,
         'to_user_id':his_id,
     },
