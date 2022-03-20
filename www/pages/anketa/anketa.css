@@ -178,3 +178,11 @@ div#card-grey4{
     font-size: 22px;
     padding: 10px;
 }
+
+body{
+    position: relative;
+}
+
+html, body{
+    overflow-x: hidden;
+}
