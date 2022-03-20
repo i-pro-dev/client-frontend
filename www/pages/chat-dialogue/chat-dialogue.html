@@ -91,7 +91,7 @@
         console.log(item);
         to_user_id = item['to_user_id'];
         from_user_id = item['from_user_id'];
-        time = "6:52"; // TODO: Fix time
+        time = item["sended"];
         message_text = item['message'];
         document.getElementById("chat-messages").innerHTML += `<div class="message message-${from_user_id != my_id ? "not" : ""}mine">
             <div class="message__text">

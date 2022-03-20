@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="desktop-feed.css">
+
+    <title>Feed</title>
+</head>
+
+<body>
+    <div class="m-3 d-flex justify-content-around align-items-center">
+        <div class="logo-text p">SKILLPLACES</div>
+        <div class="d-flex justify-content-around align-items-center">
+            <div class="text p mx-2 d-flex align-items-center mx-2">
+                <div class="grey-search-icon"></div>Поиск
+            </div>
+            <div class="text p mx-3">Конкурсы</div>
+            <div class="text p mx-3">Разместить заказ</div>
+            <div class="text p mx-3">Регистрация</div>
+            <div class="text p mx-3">Вход</div>
+        </div>
+    </div>
+    <hr>
+    <main>
+        <div class="events__upper d-flex justify-content-around align-items-center">
+            <div class="title">Текущие мероприятия</div>
+            <button>Добавить <img src="plus.svg" alt="+" srcset=""></button>
+        </div>
+        <div class="events-grid">
+            <div class="options">
+                <div class="ui_kit__checkbox-block">
+                    <div class="title"><b>Регион</b></div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Ярославль</label><label
+                            class="counter"><i>1</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Москва</label><label
+                            class="counter"><i>2</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox"
+                            class="checkbox-dark form-check-input"><label>Санкт-Петербург</label><label
+                            class="counter"><i>1</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Краснодар</label><label
+                            class="counter"><i>0</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Нижний
+                            Новгород</label><label class="counter"><i>0</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <a href="#" class="more" style="text-decoration:none">Ещё 16</a>
+                    </div>
+                </div>
+                <div class="ui_kit__checkbox-block">
+                    <div class="title"><b>Специализация</b></div>
+                    <div class="checkbox-item">
+                        <input type="checkbox"
+                            class="checkbox-dark form-check-input"><label>Python-разработчик</label><label
+                            class="counter"><i>2</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox"
+                            class="checkbox-dark form-check-input"><label>Web-разработчик</label><label
+                            class="counter"><i>0</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Mobile</label><label
+                            class="counter"><i>0</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Backend</label><label
+                            class="counter"><i>2</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-dark form-check-input"><label>Fronend</label><label
+                            class="counter"><i>0</i></label>
+                    </div>
+                    <div class="checkbox-item">
+                        <a href="#" class="more" style="text-decoration:none">Ещё 16</a>
+                    </div>
+                </div>
+                <div class="ui_kit__checkbox-block">
+                    <div class="title"><b>Дата проведения</b></div>
+
+                    <!-- TODO: SCROLL? -->
+                    <form method="post" action="/action_page_post.php">
+                        <div data-role="rangeslider">
+                            <label for="price-min">Месяц:</label>
+                            <input type="range" name="price-min" id="price-min" value="1" min="1" max="12">
+                            <label for="price-max">Месяц:</label>
+                            <input type="range" name="price-max" id="price-max" value="3" min="1" max="12">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="card-space">
+                <div class="event-card-desktop">
+                    <img src="Cypher.png" alt="1.png" srcset="" class="photo">
+                    <div class="mb-3 role">
+                        <img src="orange.svg" alt="" srcset="">
+                        <div class="name">Организатор</div>
+                    </div>
+                    <div class="description-wrapper">
+
+                        <div>
+                            <div class="mb-2 title">Хакатон "Цифра"</div>
+                            <div class="mb-3 description">Форум для разработчиков, во время которого специалисты из
+                                разных
+                                областей разработки программного обеспечения (программисты, дизайнеры, менеджеры) сообща
+                                решают
+                                какую-либо проблему на время. Некоторые хакатоны предназначены для образовательных или
+                                социальных целей, но чаще задачей хакатона является создание полноценного программного
+                                обеспечения.</div>
+                        </div>
+                        <div class="tags info-field">
+                            <div class="title">Специализации:</div>
+                            <div class="description">Python-разработчики, Web-разработчики, Mobile,
+                                Backend, Frontend </div>
+                        </div>
+                        <div class="time info-field">
+                            <div class="title">С 5 апреля 16:00 по 7 апреля 16:00</div>
+                            <div class="description">Ярославль, Точка кипения ЯрГУ им.П.Г. Демидова </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card-desktop">
+                    <img src="Cypher.png" alt="1.png" srcset="" class="photo">
+                    <div class="mb-3 role">
+                        <img src="orange.svg" alt="" srcset="">
+                        <div class="name">Организатор</div>
+                    </div>
+                    <div class="description-wrapper">
+
+                        <div>
+                            <div class="mb-2 title">Хакатон "Цифра"</div>
+                            <div class="mb-3 description">Форум для разработчиков, во время которого специалисты из
+                                разных
+                                областей разработки программного обеспечения (программисты, дизайнеры, менеджеры) сообща
+                                решают
+                                какую-либо проблему на время. Некоторые хакатоны предназначены для образовательных или
+                                социальных целей, но чаще задачей хакатона является создание полноценного программного
+                                обеспечения.</div>
+                        </div>
+                        <div class="tags info-field">
+                            <div class="title">Специализации:</div>
+                            <div class="description">Python-разработчики, Web-разработчики, Mobile,
+                                Backend, Frontend </div>
+                        </div>
+                        <div class="time info-field">
+                            <div class="title">С 5 апреля 16:00 по 7 апреля 16:00</div>
+                            <div class="description">Ярославль, Точка кипения ЯрГУ им.П.Г. Демидова </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card-desktop">
+                    <img src="Cypher.png" alt="1.png" srcset="" class="photo">
+                    <div class="mb-3 role">
+                        <img src="orange.svg" alt="" srcset="">
+                        <div class="name">Организатор</div>
+                    </div>
+                    <div class="description-wrapper">
+
+                        <div>
+                            <div class="mb-2 title">Хакатон "Цифра"</div>
+                            <div class="mb-3 description">Форум для разработчиков, во время которого специалисты из
+                                разных
+                                областей разработки программного обеспечения (программисты, дизайнеры, менеджеры) сообща
+                                решают
+                                какую-либо проблему на время. Некоторые хакатоны предназначены для образовательных или
+                                социальных целей, но чаще задачей хакатона является создание полноценного программного
+                                обеспечения.</div>
+                        </div>
+                        <div class="tags info-field">
+                            <div class="title">Специализации:</div>
+                            <div class="description">Python-разработчики, Web-разработчики, Mobile,
+                                Backend, Frontend </div>
+                        </div>
+                        <div class="time info-field">
+                            <div class="title">С 5 апреля 16:00 по 7 апреля 16:00</div>
+                            <div class="description">Ярославль, Точка кипения ЯрГУ им.П.Г. Демидова </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card-desktop">
+                    <img src="Cypher.png" alt="1.png" srcset="" class="photo">
+                    <div class="mb-3 role">
+                        <img src="orange.svg" alt="" srcset="">
+                        <div class="name">Организатор</div>
+                    </div>
+                    <div class="description-wrapper">
+
+                        <div>
+                            <div class="mb-2 title">Хакатон "Цифра"</div>
+                            <div class="mb-3 description">Форум для разработчиков, во время которого специалисты из
+                                разных
+                                областей разработки программного обеспечения (программисты, дизайнеры, менеджеры) сообща
+                                решают
+                                какую-либо проблему на время. Некоторые хакатоны предназначены для образовательных или
+                                социальных целей, но чаще задачей хакатона является создание полноценного программного
+                                обеспечения.</div>
+                        </div>
+                        <div class="tags info-field">
+                            <div class="title">Специализации:</div>
+                            <div class="description">Python-разработчики, Web-разработчики, Mobile,
+                                Backend, Frontend </div>
+                        </div>
+                        <div class="time info-field">
+                            <div class="title">С 5 апреля 16:00 по 7 апреля 16:00</div>
+                            <div class="description">Ярославль, Точка кипения ЯрГУ им.П.Г. Демидова </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card-desktop">
+                    <img src="tf.png" alt="1.png" srcset="" class="photo">
+                    <div class="mb-3 role">
+                        <img src="orange.svg" alt="" srcset="">
+                        <div class="name">Организатор</div>
+                    </div>
+                    <div class="description-wrapper">
+
+                        <div>
+                            <div class="mb-2 title">Хакатон "Team Force"</div>
+                            <div class="mb-3 description">Хакатон направлен на поиск новых и нестандартных инструментов
+                                для улучшения бизнес-процессов компаний.
+
+                                Событие приурочено к вступлению «ТФ Альянс»
+                                в сообщество Инновационного научно-технологического центра
+                                МГУ «Воробьевы горы». Компания планирует работать
+                                над инновационными проектами в сфере ИТ-услуг.</div>
+                        </div>
+                        <div class="tags info-field">
+                            <div class="title">Специализации:</div>
+                            <div class="description">Data Science, Python, Front-end
+                                и Back-end разработки</div>
+                        </div>
+                        <div class="time info-field">
+                            <div class="title">С 18 Марта по 20 Марта </div>
+                            <div class="description">Москва, Точка кипения МГУ им.М.В. Ломоносова</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="footer d-flex flex-column py-5 px-5">
+        <div class="d-flex justify-content-between align-items-centere mb-5">
+            <div class="logo-text">SKILLPLACES</div>
+            <div>ООО “ТатМобайлИнформ СиДиСи”</div>
+        </div>
+        <div class="d-flex justify-content-center align-items-start mt-5">
+            <div class="d-flex d-flex flex-column px-4">
+                <div class="text-h mb-2">КАРТА САЙТА</div>
+                <div class="mb-2">Главная</div>
+                <div class="mb-2">О компании</div>
+                <div class="mb-2">Технологии</div>
+                <div class="mb-2">Вакансии</div>
+                <div class="mb-2">HackerHome</div>
+                <div class="mb-2">Конкурсы</div>
+                <div>Главная</div>
+
+            </div>
+            <div class="d-flex flex-column px-4">
+                <div class="text-h mb-2">КОНТАКТЫ</div>
+                <div class="mb-2" style=" width:300px; word-wrap: break-word;">420500, Республика Татарстан, г.
+                    Иннополис, ул. Университетская, д.7, офис 324</div>
+            </div>
+            <div class="d-flex flex-column px-4">
+                <div class="text-h mb-2">ДОПОЛНИТЕЛЬНО</div>
+                <div class="mb-2">Политика конфиденциальности</div>
+                <div class="mb-2">Интеллектуальная собственность</div>
+                <div>Attribution</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

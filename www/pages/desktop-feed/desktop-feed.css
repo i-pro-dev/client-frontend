@@ -1,0 +1,267 @@
+.footer {
+  background: #18191b;
+  height: 550px;
+}
+div {
+  color: #fafafa;
+  font-size: 14px;
+}
+body {
+  width: 100%;
+  background-color: #f3f5f8;
+}
+div > * {
+  opacity: 0.95;
+  line-height: 28px;
+}
+.text-h {
+  font-weight: 600;
+  font-size: 24px;
+}
+.p {
+  cursor: pointer;
+  word-wrap: break-word;
+}
+h2 {
+  word-wrap: break-word;
+}
+.logo-text {
+  background: linear-gradient(125.12deg, #bc85ff -4.39%, #6259fc 109.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #18191b;
+  opacity: 0.7;
+}
+
+.events__upper button {
+  background: #ffffff;
+
+  /* Лёгкая тень */
+  box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  outline: unset;
+  border: none;
+  height: 40px;
+  width: 100%;
+  max-width: 160px;
+}
+
+.events__upper div.title {
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 24px;
+  margin-bottom: 0;
+  overflow: visible;
+  z-index: 69420;
+  height: 100%;
+  max-height: 50px;
+  vertical-align: middle;
+
+  /* identical to box height, or 67% */
+  letter-spacing: -0.01em;
+
+  /* фиолетовый градиент */
+  background: linear-gradient(125.12deg, #bc85ff -4.39%, #6259fc 109.98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.events__upper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+main {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events-grid {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 40px;
+  width: 100%;
+}
+
+.events-grid div {
+  color: black;
+
+  border-radius: 16px;
+}
+
+.options {
+  background-color: white;
+  max-height: 630px;
+  max-width: 260px;
+  min-width: 260px;
+  min-height: 630px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+}
+
+.ui_kit__checkbox-block b {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ui_kit__checkbox-block {
+  margin-bottom: 1rem;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+
+  /* identical to box height, or 17px */
+
+  /* Чёрный */
+  color: #18191b;
+}
+
+label.counter {
+  margin-left: 0.7rem;
+}
+
+.card-space {
+  max-width: 860px;
+  width: 100%;
+  min-width: 860px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.event-card-desktop {
+  position: relative;
+  margin: 0 10px;
+  width: 100%;
+  height: 100%;
+  height: 630px;
+  width: 410px;
+  background-color: white;
+  box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.event-card-desktop .role {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.event-card-desktop .role .name {
+  margin-left: 8px;
+}
+
+.event-card-desktop .photo {
+  position: relative;
+  left: -20px;
+  top: -20px;
+  width: calc(100% + 40px);
+}
+
+.event-card-desktop .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+
+  /* identical to box height, or 34px */
+  display: flex;
+  align-items: center;
+
+  /* Чёрный */
+  color: #18191b;
+}
+
+.event-card-desktop .description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+
+  /* or 17px */
+  display: flex;
+  align-items: center;
+
+  /* Чёрный */
+  color: #18191b;
+
+  opacity: 0.7;
+}
+
+.info-field .title {
+  margin-bottom: 0.3rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+
+  /* identical to box height, or 20px */
+  display: flex;
+  align-items: center;
+
+  /* Чёрный */
+  color: #18191b;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.info-field .description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
+  /* or 17px */
+  display: flex;
+  align-items: center;
+
+  /* Чёрный */
+  color: #18191b;
+
+  opacity: 0.5;
+}

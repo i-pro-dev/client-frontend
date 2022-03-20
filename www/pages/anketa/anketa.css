@@ -33,6 +33,7 @@
 h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
+    margin-top: 10px;
 }
 
 h2{
@@ -75,7 +76,7 @@ p{
 }
 
 .pth{
-    width: 43px;
+    width: 47px;
     height: 17px;
     background-color: #FFA877;
     border-radius: 4px;
@@ -87,6 +88,10 @@ p{
 
 div#card-grey1{
     height: 89px;
+}
+
+.card-grey p{
+    width: 100%;
 }
 
 ol{
@@ -172,4 +177,12 @@ div#card-grey4{
 .stevjbs{
     font-size: 22px;
     padding: 10px;
+}
+
+body{
+    position: relative;
+}
+
+html, body{
+    overflow-x: hidden;
 }
