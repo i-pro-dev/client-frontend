@@ -66,7 +66,7 @@
 <script>
     const send_message = function (from_user_id, to_user_id, msg) {
         if (!msg) setTimeout(() => { return }, 900);
-        cordovaHTTP.post(`https://hackaton-lambda-backend.herokuapp.com/messages?from_user_id=${from_user_id}&to_user_id=${to_user_id}&message=${msg.toString()}`,
+        cordovaHTTP.post(`https://hackaton-i-pro-backend.herokuapp.com/messages?from_user_id=${from_user_id}&to_user_id=${to_user_id}&message=${msg.toString()}`,
             {}, {},
             function (response) {
                 console.log(response.status);
@@ -105,7 +105,7 @@
         </div>`;
     }
     const load_messages = function (my_id, his_id) {
-        cordovaHTTP.get("https://hackaton-lambda-backend.herokuapp.com/messages", {
+        cordovaHTTP.get("https://hackaton-i-pro-backend.herokuapp.com/messages", {
             'from_user_id': my_id,
             'to_user_id': his_id,
         }, {},
