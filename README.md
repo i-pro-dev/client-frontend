@@ -3,7 +3,7 @@
 
 ### Установка
 
-Для npm и android sdk.
+Для установки требуется npm и android sdk.
 
 1. 
    ```sh
